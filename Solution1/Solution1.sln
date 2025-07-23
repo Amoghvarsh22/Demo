@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{40F8AEB6-28EF-4388-B6EC-BF04C6EA5A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{A90B120E-5B02-45C6-8618-B1EA49DC145A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{40F8AEB6-28EF-4388-B6EC-BF04C6EA5A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40F8AEB6-28EF-4388-B6EC-BF04C6EA5A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40F8AEB6-28EF-4388-B6EC-BF04C6EA5A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90B120E-5B02-45C6-8618-B1EA49DC145A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90B120E-5B02-45C6-8618-B1EA49DC145A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90B120E-5B02-45C6-8618-B1EA49DC145A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90B120E-5B02-45C6-8618-B1EA49DC145A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
