@@ -40,3 +40,17 @@ steps:
     appName: 'samplemvcapp-avk'
     package: '$(System.DefaultWorkingDirectory)/Demo/WebApplication1/bin/Release/net9.0/WebApplication1.dll'
     deploymentMethod: 'auto'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/Demo/WebApplication1/bin/Release/net8.0/'
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    includeRootFolder: false
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(7561e31f-61df-4b14-8bcf-a84ff45fdd54)'
+    appType: 'webApp'
+    appName: 'samplemvcapp-avk'
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    deploymentMethod: 'auto'
