@@ -32,3 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(7561e31f-61df-4b14-8bcf-a84ff45fdd54)'
+    appType: 'webApp'
+    appName: 'samplemvcapp-avk'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
